@@ -36,3 +36,20 @@ GRANT ROLE TABLEAU_RO TO USER TABLEAU_USER;
 SHOW USERS LIKE 'TABLEAU_USER';
 DESCRIBE USER TABLEAU_USER;
 SHOW GRANTS TO USER TABLEAU_USER;
+
+D) Connect from Tableau (no SSO)
+
+Snowflake connector → General tab:
+
+Server: oyowhsk-icb14504.snowflakecomputing.com
+
+Warehouse: COMPUTE_WH
+
+Authentication: Username and Password
+
+Username: the value you set in step C
+Password: the value you set in step C
+
+Role: leave blank (it will use the value you set in step C)
+
+Advanced tab: make sure it’s empty (no Authenticator= lines).
